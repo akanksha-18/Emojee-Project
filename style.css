@@ -1,0 +1,96 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #333333;
+    --primary: #3498db; /* Change this to your preferred primary color */
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: var(--black);
+    background-image: url('bg.jpg');
+    filter: blur(30%);
+    color: var(--white);
+    background-position: center top;
+    opacity: 0.8; 
+}
+
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    /* color: var(--primary); */
+    color: #B9091E;
+    font-weight: bolder;
+}
+
+hr {
+    border: 1px solid #B9091E;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+input {
+    font-size: 1.2rem;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+
+.emoji {
+    font-size: 2rem;
+}
+
+.aliases {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.desc {
+    font-size: 1.2rem;
+}
+
+.desc::first-letter {
+    text-transform: uppercase;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: #f2f2f2;
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+th, td {
+    border: 1px solid var(--primary);
+    padding: 1rem;
+    text-align: left;
+    font-size: 1rem; 
+    font-weight: 900;
+    color: #B9091E; 
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+tr:hover {
+    background-color: #e0e0e0; 
+    cursor: pointer;
+}
