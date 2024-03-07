@@ -6,7 +6,7 @@
     --black: #000000;
     --white: #ffffff;
     --gray: #333333;
-    --primary: #3498db; /* Change this to your preferred primary color */
+    --primary: #3498db; 
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
@@ -50,7 +50,9 @@ input {
     border: 1px solid var(--primary);
     border-radius: 5px;
     padding: 0.5rem;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto; 
+    display: block;
 }
 
 
@@ -70,14 +72,17 @@ input {
 .desc::first-letter {
     text-transform: uppercase;
 }
+.table-container {
+    max-height: 510px; 
+    overflow-y: auto; 
+}
 table {
     border-collapse: collapse;
     width: 100%;
-    margin-top: 1.5rem;
     background-color: #f2f2f2;
-    border-radius: 10px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 th, td {
     border: 1px solid var(--primary);
@@ -93,4 +98,7 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #e0e0e0; 
     cursor: pointer;
-}
+} 
+
+
+
